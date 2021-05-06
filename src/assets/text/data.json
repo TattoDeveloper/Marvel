@@ -1,0 +1,77 @@
+{
+  "header":{
+    "logo": "/images/Avengers logo.png",
+    "menu" : [
+      {"name":"Inicio", "id": ""},
+      {"name":"Ironman", "id": "1009368"},
+      {"name": "Viuda negra", "id": "1010911"},
+      {"name": "Capitán America", "id":  "1009220"},
+      {"name": "Pantera negra", "id": "1009187"},
+      {"name": "Hulk", "id": "1009351"},
+      {"name":"Thor", "id":"1009664"}
+    ]
+  },
+  "homeHeader":{
+    "title": "Avengers Crew",
+    "description": "Descubre la vida secreta de los heroes con los que cresciste",
+    "button": "Conoce los personajes",
+    "img": {
+      "path" : "/images/avengers-crew.png",
+      "alt" : "avengers-crew"
+    }
+  },
+  "gallery": {
+    "title": "Los personajes",
+    "banner": {
+      "image": "/images/falcon-winter-soldier.png",
+      "logo": "/images/Disney_Channel_wordmark.png",
+      "buttonLabel": "Ver ahora",
+      "title": "Falcon y el soldado de invierno",
+      "text" :"Una serie exclusiva de Disney"
+    },
+    "heros":[
+      {
+        "id": "1009368",
+        "name": "Ironman",
+        "image": "/images/Ironman.png",
+        "description": "Genius. Billionaire. Philanthropist. Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man.",
+        "buttonLabel": "Ver más"
+      },
+      {
+        "id": "1010911",
+        "name": "Viuda negra",
+        "image": "/images/Black Widow.png",
+        "description": "Despite super spy Natasha Romanoff’s checkered past, she became one of S.H.I.E.L.D.’s most formidable agents before...",
+        "buttonLabel": "Ver más"
+      },
+      {
+        "id": "1009220",
+        "name": "Capitán América",
+        "image": "/images/Roggers.png",
+        "description": "Recipient of the Super-Soldier serum, World War II hero Steve Rogers fights for American ideals as one of the world’s...",
+        "buttonLabel": "Ver más"
+      },
+      {
+        "id": "1009187",
+        "name": "Pantera negra",
+        "image": "/images/Black Panter.png",
+        "description": "T’Challa is the king of the secretive and highly advanced African nation of Wakanda - as well as the powerful warrior known as...",
+        "buttonLabel": "Ver más"
+      },
+      {
+        "id": "1009351",
+        "name": "Hulk",
+        "image": "/images/Hulk.png",
+        "description": "Exposed to heavy doses of gamma radiation, scientist Bruce Banner transforms into the mean, green rage machine called the Hulk.",
+        "buttonLabel": "Ver más"
+      },
+      {
+        "id": "1009664",
+        "name": "Thor",
+        "image": "/images/thor.png",
+        "description": "Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond.",
+        "buttonLabel": "Ver más"
+      }
+    ]
+  }
+}

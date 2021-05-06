@@ -1,0 +1,9 @@
+.card{
+  padding: .3rem;
+  text-align: center;
+  color: var(--neutral-blue);
+}
+
+.card img{
+  height: 436px;
+}

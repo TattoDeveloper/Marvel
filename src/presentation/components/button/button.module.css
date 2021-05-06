@@ -1,0 +1,15 @@
+.button{
+  border:none;
+  padding: 18px 45px;
+  border-radius: 100px;
+  cursor: pointer;
+  color:white;
+}
+
+.primary{
+  background-color: var(--primary-red);
+}
+
+.violet{
+  background-color: var(--primary-violet);
+}
