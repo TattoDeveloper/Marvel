@@ -65,6 +65,9 @@
 }
 
 @media (max-width:850px){
+  .banner{
+    position: relative;
+  }
 
   .bannerInfo{
     width:74%;
@@ -78,11 +81,11 @@
   .banner::after{
     content: "";
     display: block;
-    background: linear-gradient(180deg, rgba(0,91,234,1) 2%, rgba(84,50,208,1) 78%, rgba(84,50,211,1) 99%);
-    height: 318px;
+    background: linear-gradient(180deg, rgba(0,91,234,0) 2%, rgba(84,50,208,1) 78%, rgba(84,50,211,1) 99%);
+    height: 108px;
     width: 100%;
     position: absolute;
-    top:0;
+    bottom:0;
     left: 0;
   }
 
