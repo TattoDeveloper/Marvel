@@ -1,0 +1,17 @@
+.description{
+  margin: 0;
+}
+
+.cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+   justify-content: space-between;
+}
+.cards p{
+  padding: 1rem;
+  width: 30%;
+  margin: 1%;
+  border: 1px solid;
+  text-align: center;
+}

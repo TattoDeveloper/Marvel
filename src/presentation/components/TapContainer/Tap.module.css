@@ -3,7 +3,7 @@
     border-bottom: solid 1px var(--gray-color);
     color: var(--black);
     width: 120px;
-    margin-right: 3%;
+    margin-right: 4%;
 }
 
 .tapContainer button{
@@ -20,7 +20,6 @@
     font-weight: bold;
     font-size: 1.1rem;
     color: var(--darkGray-color);
-    min-width: 87px ;
     outline:none;
     cursor: pointer;
 }
@@ -34,7 +33,7 @@
     width: 100%;
     margin:0 1.3% 0 1.6%;
     display: flex;
-    padding-top: 100px;
+    padding: 160px 0;
 }
 .view{
     width: 100%;
@@ -42,7 +41,7 @@
 }
 
 .blockSliderCont{
-    margin-top: 3.4rem;
+    width: 75%;
 }
 
 .subBlock h4{
@@ -106,7 +105,16 @@
 }
 
 @media (max-width:600px){
-    .subBlock{
-        width: 95%;
+    .block{
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .tapContainer{
+      display: flex;
+    }
+
+    .tap{
+       padding: ;
     }
 }

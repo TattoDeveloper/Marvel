@@ -1,7 +1,7 @@
 import style from './home.module.css';
 import { Button } from '../../components/button/button';
 import React from 'react';
-import { homeHeader, gallery } from '../../../assets/text/data.json';
+import { homeHeader, gallery} from '../../../assets/text/data.json';
 import { Banner } from '../../components/banner/banner';
 import { Slider } from '../../components/slider/slider';
 import { useDispatch } from 'react-redux';
@@ -54,6 +54,7 @@ export const HomePage: React.FunctionComponent = () =>{
            />
        </div>
       </section>
+    
     </div>
   )
 };

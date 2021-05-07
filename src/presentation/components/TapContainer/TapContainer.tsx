@@ -45,37 +45,6 @@ export const TapView: React.FunctionComponent<TapViewProps> = ({children}: TapVi
   </div>
 )
 
-/* export const TabSubBlock = ({title, subtitle, type,children}) =>(
-  <div className={`${style.subBlock} ${style[type]}`}>
-     <h4>{title}</h4>
-     {subtitle && <span>{subtitle}</span>}
-     {children}
-  </div>
-)
- */
-
-/* export const TapSubBlockScores=({current, experience})=>(
-   <div className={style.scores}>
-      <div className={style.scoreItem}>
-        <div>
-          <div>
-             <img src="./cup.png" />
-          </div>
-          <span>Completado</span>
-        </div>
-          <span>{current}%</span>
-      </div>
-      <div className={`${style.scoreItem} ${style.boldExp}`}>
-        <div>
-          <div>
-            <img src="./ray.png" />
-          </div>
-          <span>Experiencia</span>
-        </div>
-          <span>{current}%</span>
-      </div>
-   </div>
-) */
 
 
 interface TapBlockProps{
@@ -87,7 +56,7 @@ export const TapBLock: React.FunctionComponent<TapBlockProps>=({children, tapLis
   const [index, setIndex] = React.useState(0)
 
   const change=({target}: any)=>{
-     setIndex(target.dataset.index)
+     setIndex(parseInt(target.dataset.index))
   }
 
   return(
@@ -106,7 +75,8 @@ export const TapBLock: React.FunctionComponent<TapBlockProps>=({children, tapLis
         <div className={style.blockSliderCont}>
             <div className={style.blockSlider}>
                 {React.Children.map(children, (child, _index)=>{
-                    if(_index == index){
+                  console.log(child)
+                    if(_index === index){
                       return React.cloneElement(child)
                     }
                 })}

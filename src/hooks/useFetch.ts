@@ -11,7 +11,7 @@ export const useFetch = (service: Function, params:any[])=>{
           setLoad(false)
       }
 
-      get()
+      get() 
    },[])
 
 
