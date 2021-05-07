@@ -114,4 +114,8 @@
       display: flex;
     }
 
+    .blockSliderCont{
+        width: 96%;
+    }
+
 }

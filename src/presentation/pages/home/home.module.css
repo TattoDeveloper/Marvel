@@ -99,12 +99,16 @@
     order: 2;
     width: 90%;
     position: absolute;
-    bottom: 20px;
+    bottom: -80px;
     z-index: 9;
   }
 
   .mainSectionImageContainer{
     width: 100%;
+  }
+
+  .mainSectionImageContainer img{
+    height: 75vh;
   }
 
 

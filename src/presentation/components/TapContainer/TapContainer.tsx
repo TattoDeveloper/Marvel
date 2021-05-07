@@ -61,7 +61,6 @@ export const TapBLock: React.FunctionComponent<TapBlockProps>=({children, tapLis
 
   return(
     <div className={style.block}>
-      {console.log(index)}
         <TapMenu
           current={index}
         >

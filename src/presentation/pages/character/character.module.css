@@ -65,6 +65,7 @@
 
 .detail{
   background-color: white;
+  
 }
 
 @media (max-width:768px) {
@@ -76,4 +77,7 @@
   .heroContainer{
     width: 95%;
   }
+  .heroContainer img{
+    height:70vh
+ }
 }

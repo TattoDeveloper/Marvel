@@ -48,7 +48,7 @@ const MovilepMenu: React.FunctionComponent<HeaderProps> = ( {menu}: HeaderProps)
                {
                   menu.map((element, index)=> {
                      const path = index === 0 ? '/' : `/character/${element.id}`
-                     return<NavLink to={path} activeClassName={style.menuActive}>
+                     return<NavLink to={path} activeClassName={style.menuActive} onClick={toggleModal}>
                         <li key={element.id}>{element.name}</li>
                      </NavLink>
                   })

@@ -77,5 +77,6 @@
   "footer":{
     "image": "/images/marvel-logo.png",
     "text": "©Disney Company  todos los derechos reservados"
-  }
+  },
+  "noFound":"Descripción no encontrada"
 }

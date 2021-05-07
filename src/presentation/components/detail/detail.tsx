@@ -1,10 +1,8 @@
 import React from 'react';
-import { CharacterEntity } from '../../../core/entities/character';
-import { ComicsEntity } from '../../../core/entities/comics.entity';
-import { useFetch } from '../../../hooks/useFetch';
 import { CharacterViewModel } from '../../pages/character/viewModel';
 import { TapBLock, TapView } from '../TapContainer/TapContainer';
 import style from './detail.module.css';
+import { noFound } from '../../../assets/text/data.json'
 
 /* type DetailProps<T> = {
   [K in keyof T]?: T[K];
@@ -25,7 +23,6 @@ export const Detail: React.FunctionComponent<DetailProps> = ( {id}: DetailProps)
         const data: any = await CharacterViewModel(id)
         setData(data);
         setLoading(false)
-        
     }
 
     get()
@@ -39,28 +36,26 @@ export const Detail: React.FunctionComponent<DetailProps> = ( {id}: DetailProps)
            "Series"
         ]}
        >
-           {
-             data.description && <>
-                 <TapView>
-                      <p className={style.description}>{ data.description }</p>
-                
-                      </TapView>
-                      <TapView>
-                          <div className={style.cards}>
-                          {data.comics.map((element:any)=>{
-                            return <p>{element}</p>
-                          })}
-                          </div>
-                      </TapView>
-                      <TapView>
-                      <div className={style.cards}>
-                          {data.series.map((element:any)=>{
-                            return <p>{element}</p>
-                          })}
-                          </div>
-                      </TapView>
-             </>
-           }
+           
+          <TapView>
+             <p className={style.description}>{ data.description && data.description.length > 0 ? data.description :  noFound }</p>
+          </TapView>
+          <TapView>
+              <div className={style.cards}>
+                {data.comics && data.comics.map((element:any)=>{
+                    return<p>{element.name}</p>
+                })}
+               </div>
+           </TapView>
+            <TapView>
+               <div className={style.cards}>
+                  {data.series && data.series.map((element:any)=>{
+                     return<p>{element.name}</p>
+                  })}
+                </div>
+            </TapView>
+           
+           
        </TapBLock>
   )
 }

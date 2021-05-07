@@ -6,12 +6,23 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-   justify-content: space-between;
+  justify-content: flex-start;
 }
 .cards p{
   padding: 1rem;
-  width: 30%;
+  width: 31%;
   margin: 1%;
   border: 1px solid;
   text-align: center;
+}
+
+@media (max-width:600px){
+
+  .cards{
+    justify-content: flex-start;
+  }
+
+  .cards p{
+    width: 48%;
+  }
 }
