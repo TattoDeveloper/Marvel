@@ -7,7 +7,7 @@ node {
   }
   stage('build') {
     nodejs(nodeJSInstallationName: 'nodejs') {
-       sh 'npm install --production'
+       sh 'npm install --omit=dev'
     }
   }
 }
