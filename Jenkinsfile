@@ -18,7 +18,9 @@ node {
   }
 
   stage('deploy') {
-    sh 'npm -v'
+    nodejs(nodeJSInstallationName: 'nodejs') {
+       sh 'npm build'
+    }
   }
   
 }
