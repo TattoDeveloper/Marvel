@@ -12,7 +12,9 @@ node {
   }
 
   stage('test') {
-    sh 'npm -v'
+    nodejs(nodeJSInstallationName: 'nodejs') {
+       sh 'npm -v'
+    }
   }
 
   stage('deploy') {
