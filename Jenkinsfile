@@ -10,4 +10,17 @@ node {
        sh 'npm install --omit=dev'
     }
   }
+
+  stage('test') {
+    steps {
+      sh 'npm test'
+    }
+  }
+
+  stage('deploy') {
+    steps {
+      sh 'npm run deploy'
+    }
+  }
+  
 }
