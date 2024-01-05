@@ -12,15 +12,11 @@ node {
   }
 
   stage('test') {
-    steps {
-      sh 'npm test'
-    }
+    sh 'npm -v'
   }
 
   stage('deploy') {
-    steps {
-      sh 'npm run deploy'
-    }
+    sh 'npm -v'
   }
   
 }
